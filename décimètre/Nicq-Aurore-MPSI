@@ -1,0 +1,32 @@
+def somme(n):
+    s=0
+    for i in range(n+1):
+        s+= i
+    return s
+
+def  puissance2(n):
+    p=[]
+    for i in range(n):
+        p.append(2**i)
+    return p
+
+
+def produit(L):
+    P=1
+    for i in range(len(L)):
+        P=P*L[i]
+    return P
+
+def egal(L):
+    for i in range(len(L)):
+        if L[i]!=L[0]:
+            return False
+    return True
+
+
+def carre_parfait(n):
+    for i in range(n+1):      
+        if i**2==n:
+            return True
+    return False
+
